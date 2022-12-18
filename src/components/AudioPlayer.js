@@ -1,11 +1,11 @@
 
 import * as React from "react";
-import './style/style.css';
 import { IoMdSkipBackward, IoMdSkipForward, IoMdPlay, IoMdPause, IoIosVolumeHigh } from "react-icons/io";
 import { CircularProgressbar } from "react-circular-progressbar";
 import Slider from 'react-rangeslider'
-import 'react-rangeslider/lib/index.css'
 import GradientSVG from "./gradientSVG";
+import 'react-rangeslider/lib/index.css'
+import './style/style.css';
 
 const tracks = [
     {
@@ -172,7 +172,6 @@ function VolumeButton() {
                     />
                 </div> : null
             }
-
         </div>
     )
 }
@@ -191,8 +190,7 @@ function Progress(props) {
         let secPerPx = length / 840
         player.currentTime = secPerPx * newWidth
     }
-    
-    
+        
     setInterval(() => {
         setLength(Math.ceil(player.duration))
         let secPerPx = Math.ceil(player.duration) / 840
@@ -231,7 +229,7 @@ function Avatar(props) {
     );
 }
 
-const AudioPlayer = (props) => {
+const AudioPlayer = () => {
     let [idx, setIdx] = React.useState(0);
     let [playState, setPlayState] = React.useState(false);
     let oldIdx = React.useRef(idx)
