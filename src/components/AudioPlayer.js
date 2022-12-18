@@ -119,10 +119,6 @@ function Control(props) {
 
 function VolumeButton() {
     const idCSS = "hello";
-    React.useEffect(() => {
-        setKeyRangeBar(false);
-        setVolumeState(30)
-    }, [])
     const audioRef = React.useRef(player)
     const [volumeState, setVolumeState] = React.useState(audioRef.current.volume * 100)
     const [keyRangeBar, setKeyRangeBar] = React.useState(false)
@@ -130,6 +126,10 @@ function VolumeButton() {
         audioRef.current.volume = value / 100;
         setVolumeState(value)
     }
+    React.useEffect(() => {
+        setKeyRangeBar(false);
+        setVolumeState(30)
+    }, [])
     const showSlider = () => {
         if (keyRangeBar === true) {
             setKeyRangeBar(false)
