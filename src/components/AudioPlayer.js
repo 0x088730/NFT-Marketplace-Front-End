@@ -80,7 +80,6 @@ const userOptions = React.createContext({
 })
 
 function Control(props) {
-
     return (
         <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '55px' }} >
             <div style={{
@@ -125,7 +124,6 @@ function VolumeButton() {
         setVolumeState(30)
     }, [])
     const audioRef = React.useRef(player)
-    console.log("player", audioRef.current.volume)
     const [volumeState, setVolumeState] = React.useState(audioRef.current.volume * 100)
     const [keyRangeBar, setKeyRangeBar] = React.useState(false)
     const handleChange = (value) => {
@@ -182,7 +180,7 @@ function Progress(props) {
     const progressBar = document.querySelector('.progressBar')
     
     function updateProgress(e) {
-        console.log('e.clientX', e.clientX)
+
         let offset = e.target.getBoundingClientRect().left
         let newOffSet = e.clientX
         let newWidth = newOffSet - offset
