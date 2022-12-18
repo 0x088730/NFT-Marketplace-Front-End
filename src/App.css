@@ -1,0 +1,19 @@
+html, body {
+  /* height: 100%; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1D21;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6F6F6F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6F6F6F;
+}
