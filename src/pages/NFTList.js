@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../components/header/Navbar";
 import Footer from "../components/footer/Footer";
 import ProducerCarousel from "../components/ProducerCarousel";
