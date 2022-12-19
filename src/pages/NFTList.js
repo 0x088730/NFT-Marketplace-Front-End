@@ -40,16 +40,16 @@ function NFTList() {
         <div className="share-this-page text-center subtext-font">Share this page</div>
         <div className='social-block text-center'>
           <a href='' className='social-link'>
-            <img src='assets/images/facebook.svg' alt=''></img>
+            <img src='assets/images/facebook.svg' alt='social'></img>
           </a>
           <a href='' className='social-link'>
-            <img src='assets/images/twitter.svg' alt=''></img>
+            <img src='assets/images/twitter.svg' alt='social'></img>
           </a>
           <a href='' className='social-link'>
-            <img src='assets/images/telegram.svg' alt=''></img>
+            <img src='assets/images/telegram.svg' alt='social'></img>
           </a>
           <a href='' className='social-link'>
-            <img src='assets/images/youtube.svg' alt=''></img>
+            <img src='assets/images/youtube.svg' alt='social'></img>
           </a>
         </div>
         <div className="section-spacing filter-item-block text-center">
